@@ -1,19 +1,19 @@
-//
-//  ViewController.swift
-//  Test03
-//
-//  Created by 077tech on 2022/10/07.
-//
-
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController{
 
+    @IBOutlet weak var buttonitem: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        buttonitem.setTitleTextAttributes([
+            NSAttributedString.Key.font: UIFont(name: "Helvetica-Bold", size: 50.0)!,
+            NSAttributedString.Key.foregroundColor: UIColor.green], for: .normal)
+        
+        buttonitem.setTitleTextAttributes([
+            NSAttributedString.Key.font: UIFont(name: "Helvetica-Bold", size: 50.0)!,
+            NSAttributedString.Key.foregroundColor: UIColor.green], for: .selected
+        )
     }
-
-
 }
-
